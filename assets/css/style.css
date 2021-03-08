@@ -1,0 +1,735 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.header-top {
+    background-image: url("../images/main-foto.jpg");
+    background-size: cover;
+    /* #2 излишне */
+    text-align: center;
+}
+
+.header-top__inner {
+    height: 100vh;
+}
+
+.logo {}
+
+.logo__img{
+    padding-top: 20px;
+    /* лишнее свойство */
+    /* align-items: center; */
+    /* ИСПРАВЛЕНО! */    
+}
+
+.header-top__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-top__title {
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 5.70937px;
+    color: #FFF;
+
+    /* №1 вариант */
+    /* position: absolute;
+    bottom: 50%;
+    width: 100%; */
+    /* №2 вариант */
+    /* ИСПРАВЛЕНО! */    
+    margin: 20vh 0 0;
+}
+
+.header-top__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFF;
+
+    /* №1 вариант */
+    /* position: absolute;
+    bottom: 48%;
+    width: 100%; */
+    /* №2 вариант */
+    /* ИСПРАВЛЕНО! */    
+    margin: 0 0 25vh;
+}
+
+.header-top__text-bottom {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.7px;
+    color: #FFF;
+    text-transform: uppercase;
+    /* №1 вариант */
+    position: absolute;
+    bottom: 71px;
+    width: 100%;
+    /* ИСПРАВЛЕНО! */  
+    
+}
+
+.header {
+    border: 2px solid #E6E6E6;
+    padding: 30px 0;
+    /* лишние свойства, эл-т с static не работает с ними */
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    /* ИСПРАВЛЕНО! */  
+}
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 941px;
+    margin: 0 auto;
+
+}
+    
+.logo-2 {}
+
+.logo-2__img {
+    /* margin лучше убрать, и перенести на общий блок
+    .header как padding: 30px 0; */
+    /* ИСПРАВЛЕНО! */  
+width: 80px;
+}
+
+.nav {}
+
+.nav__list {}
+
+.nav__item {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.nav__item:last-child {
+    margin: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.09091px;
+    text-transform: uppercase;
+    color: #48555B;
+    transition: color ease 0.3s;
+}
+
+
+.nav__link.active,
+.nav__link:hover,
+.nav__link:focus {
+    color: #00A4E5;
+}
+
+.our-story {}
+
+.container {
+    width: 941px;
+    margin: 0 auto;
+}
+
+.our-story__inner {
+    position: relative;
+
+}
+
+.our-story__title {}
+
+.our-story__title-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 2.30625px;
+    text-transform: uppercase;
+    color: #48555B;
+    margin-top: 57px;
+
+}
+
+/* #2 убрать и сделать псевдоэлементом ::after
+ для .our-story__title-text */
+.our-story__title-line {
+    height: 2px;
+    max-width: 50px;
+    background: #00A4E5;
+    margin: 10px auto 10px;
+}
+
+.our-story__body {
+    display: flex;
+}
+
+.our-story__about {
+    max-width: 50%;
+}
+
+
+.our-story__heading {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+    margin-top: 50px;
+    max-width: 405px
+    /* #2 лишнее */
+    /*max-width: 405px;*/
+}
+
+.our-story__text {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+    max-width: 400px;
+    margin-top: 50px;
+    /* #2 лишнее */
+    /*max-width: 400px;*/
+    
+}
+
+.our-story__work {
+
+}
+
+.section {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.section__plan {
+    position: relative;
+    margin-left: 20px;
+}
+
+.plan__img {
+
+}
+
+.plan__text {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    /* max-width: 35px; */
+    /* не нужно так сильно его плющить
+    достаточно 105px */
+    /* ИСПРАВЛЕНО! */
+    max-width: 105px;
+}
+
+.section__manage {
+    position: relative;
+    margin-left: 20px;
+
+}
+
+.manage__img {}
+
+.manage__text {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    /* max-width: 35px; */
+    /* не нужно так сильно его плющить
+    достаточно 105px */
+    /* ИСПРАВЛЕНО! */
+    max-width: 105px;
+}
+
+.section__build {
+    position: relative;
+    margin-left: 20px;
+}
+
+.build__img {}
+
+.build__text {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    /* max-width: 35px; */
+    /* не нужно так сильно его плющить
+    достаточно 105px */
+    /* ИСПРАВЛЕНО! */
+    max-width: 105px;
+    }
+
+.colortext {
+    color: #00A4E5;
+}
+
+.capabilities__inner {}
+
+.capabilities__content {
+
+}
+
+.capabilities__head {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 0 0;
+}
+
+.capabilities__title {
+    
+
+}
+
+.capabilities__title-text {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+    color: #48555B;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.capabilities__title-line {
+    height: 2px;
+    max-width: 50px;
+    background: #00A4E5;
+    margin-top: 10px;
+}
+
+.capabilities__text {
+    margin-left: 150px;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #48555B;
+    width: 400px;
+}
+
+.btn {}
+
+.btn_btn--primary {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    background-color: #00A4E5;
+    padding: 10px 15px;
+    width: 150px;
+}
+
+/* НЕ РАБОТАЕТ!?! */
+/* потому что не было такого класса
+в разметке был btn_btn--primary */
+.btn--primary:hover,
+.btn--primary:focus {
+    opacity: 0.9;
+}
+
+.capabilities__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #2 project
+ structure
+ factory
+ оставить что-то одно, как и в html,
+ т.к. стили одинаковые
+ */
+.project {
+    /* #2 ширину задать в % а не px */
+    width: 295px;
+    height: 330px;
+    margin-top: 70px;
+    border: 1px solid #E6E6E6;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20PX;
+}
+
+.project__img-wrap {}
+
+.project__img {}
+
+.project__title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.426667px;
+    color: #48555B;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.project__text {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+    margin-top: 20px;
+}
+
+.structure {
+    Width: 295px;
+    Height:330px;
+    margin-top: 70px;
+    border: 1px solid #E6E6E6;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20PX;
+}
+
+.structure__img-wrap {
+
+}
+
+.structure__img {}
+
+.structure__title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.426667px;
+    color: #48555B;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.structure__text {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+    margin-top: 20px;
+
+}
+
+.factory {
+    Width: 295px;
+    Height:330px;
+    margin-top: 70px;
+    border: 1px solid #E6E6E6;
+    padding-top: 35px;
+    padding-left: 20px;
+    padding-right: 20PX;
+}
+
+.factory__img-wrap {
+
+}
+
+.factory__img {}
+
+.factory__title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.426667px;
+    color: #48555B;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.facture__text {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+    margin-top: 20px;
+
+}
+
+
+
+
+.town {
+    /* путь поломан он должен быть относительно файла из которого мы пишем, пишем мы из style.css */
+    /* background-image: url(/Project/assets/images/town.jpg); */
+    /* ИСПРАВЛЕНО!! */    
+    background-image: url("../images/town.jpg");
+    background-size: 100vmax;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-top: 150px;
+}
+
+.town_title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.15px;    
+    color: #48555B;
+    font-weight: 700;
+    width: 350px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    }
+
+/* #2 блок btn
+переносим общие для всех кнопок стили
+*/
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    width: 150px;
+    height: 40px;
+}
+
+.town__btn {
+    text-align: center;
+}
+
+/* #2 модификатор для блока btn
+ оставляем только цвета */
+/*.btn_btn--primary {*/
+.btn--primary {
+    color: #FFFFFF;
+    background-color: #00A4E5;
+}
+
+.signup {
+    /* #2 излишне */
+    /*background-size: 100vmax;*/
+    /* #2 убрать height,
+     отлепить контент от краев с помощью padding*/
+    height: 100px;
+    background-color: #171819;
+    border: 1px solid #171819;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+   
+}
+
+.signup__title {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.846154px;
+    color: #FFF;
+    font-weight: 700;
+    padding-left: 300px;
+
+    }
+
+.form__inner {
+    display: flex;
+    text-align: center;
+
+}
+
+.formgroup {
+
+    padding-left: 50px;
+}
+
+.formgroup__field {
+
+    border: 1p solid #fff;
+    height: 40px;
+    width: 250px;
+}
+
+.formgroup__btn {}
+
+
+
+
+
+
+.footer {
+    background-size: 100vmax;
+    height: 240px;
+    background-color: #141A20;
+    display: flex;
+    align-items: center;
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__company {
+    width: 250px;
+    margin-right: 70px;
+}
+
+.company__title {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.company__logo {
+
+}
+
+.company__text {
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+    color: #FFF;
+    width: 250px;
+    margin-top: 20px;
+}
+
+
+
+.footer__links {
+
+
+}
+
+.links__title {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    
+
+}
+
+.links__class {
+    display: flex;
+    margin-right: 70px;
+
+}
+
+
+.links__first {
+    margin-right: 30px;
+
+}
+
+.links__text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+      
+}
+
+.links__second {
+    margin-right: 30px;
+}
+
+.links__third {}
+
+
+
+.contact {}
+
+.contact__title {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFF;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+
+.contact__text {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.846154px;
+    color: #FFF;
+    
+}
+
+.social {
+    display: flex;
+    padding-bottom: 90px;
+}
+
+.social__face {}
+
+.social__twit {}
+
+.social__goog {}
+
+.end {
+    background-size: 100vmax;
+    height: 60px;
+    background-color: #171819;
+    display: flex;
+    align-items: center;
+
+}
+
+.end__text {
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFF;
+    text-align: center;
+    margin: 0 auto;
+
+}
